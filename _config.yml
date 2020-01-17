@@ -6,16 +6,16 @@
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 
-title: Edit _config.yml to set your title!
-description: This is where the description of your site will go. You should change it by editing the _config.yml file. It can be as long as you like! Happy blogging... ❤
-github_username: jph00
+title: GIS, Data und das Rettungswesen
+description: In diesem Blog möchte ich etwas über mein Geoinformatik Studium und über die Datenanalyse im Rettungswesen erzählen.
+github_username: tobiaswildezahn
 
 # Email and twitter are optional:
-email: 
-twitter_username: 
+email: tobias.zahn.hamburg@gmail.com
+twitter_username: TobiasZahn
 
 # Set this to true to get LaTeX math equation support
-use_math: 
+use_math: true
 
 # Everything below here can be ignored, unless you want to change the theme entirely
 theme: minima
