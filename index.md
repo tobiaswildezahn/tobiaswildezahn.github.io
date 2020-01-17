@@ -1,7 +1,5 @@
-Hello and welcome to this blog. Edit the `index.md` file to change this content. All pages on the blog, including this one, use [Markdown](https://guides.github.com/features/mastering-markdown/). You can include images:
+# GIS, Data und das Rettungswesen
 
-![Image of fast.ai logo](images/logo.png)
+In diesem Blog möchte ich über meine Fortschritte im Master Studium der Geoinfarmatik [UNIGIS](https://unigis.at) erzählen, über die Möglichkeiten der Datascience im Bereich des Rettungswesens, insbesondere der Notfallmedizin, schreiben und über Trends, Entwicklungen und Neuigkeiten aus der nichtpolizeilichen Gefahrenabwehr berichten.
 
-## This is a title
-
-And you can include links, like this [link to fast.ai](https://www.fast.ai). Posts will appear after this file.
+Euer Tobi
