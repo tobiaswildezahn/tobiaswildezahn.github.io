@@ -25,7 +25,10 @@ theme: minima
 plugins:
   - jekyll-feed
   - jemoji
-
+# dark scheme
+minima:
+  skin: dark
+  
 titles_from_headings:
   enabled:     true
   strip_title: true
