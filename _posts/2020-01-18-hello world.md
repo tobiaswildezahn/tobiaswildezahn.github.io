@@ -1,4 +1,4 @@
 # Hello World
 
 Das ist meiner erster Blogpost überhaupt. Inspiriert durch Jeremy Howard und Rachel Thomas von [fast.ai](https://www.fast.ai) 
-möchte ich auch mit dem bloggen beginnen.
+möchte ich auch mit dem Bloggen beginnen.
