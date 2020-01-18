@@ -25,8 +25,9 @@ theme: minima
 plugins:
   - jekyll-feed
   - jemoji
+  - jekyll-remote-theme
 # dark scheme
-theme: dark-minima
+remote_theme: songzivong/dark-minima
   
 titles_from_headings:
   enabled:     true
