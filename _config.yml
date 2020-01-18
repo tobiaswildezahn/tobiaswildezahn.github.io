@@ -21,13 +21,15 @@ use_math: true
 # google analytics
 google_analytics: UA-NNNNNNNN-N
 # Everything below here can be ignored, unless you want to change the theme entirely
-theme: minima
+#theme: minima
 plugins:
   - jekyll-feed
   - jemoji
   - jekyll-remote-theme
-# dark scheme
+  
+# dark theme  
 remote_theme: songzivong/dark-minima
+
   
 titles_from_headings:
   enabled:     true
