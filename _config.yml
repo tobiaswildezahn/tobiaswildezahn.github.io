@@ -7,7 +7,7 @@
 # https://learnxinyminutes.com/docs/yaml/
 
 title: GIS, Data und das Rettungswesen
-description: In diesem Blog möchte ich etwas über mein Geoinformatik Studium und über die Möglichkeiten der Datenanalyse im Rettungswesen erzählen. :earth_africa: :ambulance: 
+description: In diesem Blog möchte ich etwas über mein Geoinformatik Studium und über die Möglichkeiten der Datenanalyse im Rettungswesen erzählen. :ambulance: 
 github_username: tobiaswildezahn
 
 # Email and twitter are optional:
@@ -23,6 +23,7 @@ use_math: true
 theme: minima
 plugins:
   - jekyll-feed
+  - jemoji
 
 titles_from_headings:
   enabled:     true
