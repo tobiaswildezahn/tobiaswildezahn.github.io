@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vucci News</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #cc0000; /* Feuerwehrrot */
+            color: #fff;
+            padding: 20px 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .breaking-news {
+            background-color: #ffcc00;
+            color: #000;
+            padding: 10px 0;
+            overflow: hidden;
+            position: relative;
+        }
+        .breaking-news marquee {
+            font-weight: bold;
+            font-size: 1rem;
+            animation: blink 1s step-start 0s infinite;
+        }
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+        .featured {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+        }
+        .featured-article {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .featured-article img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            border: 5px solid #cc0000; /* Rahmen in Feuerwehrrot */
+        }
+        .featured-sidebar {
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .sidebar-article {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 5px solid #cc0000; /* Indikator in Feuerwehrrot */
+        }
+        .sidebar-article h3 {
+            margin-top: 0;
+            color: #cc0000;
+        }
+        .news-sections {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .section {
+            background-color: #fff;
+            border-radius: 5px;
+            overflow: hidden;
+            border-top: 5px solid #cc0000; /* Kopfzeile in Feuerwehrrot */
+        }
+        .section header {
+            background-color: #cc0000; /* Feuerwehrrot */
+            color: #fff;
+            padding: 10px;
+            font-size: 1.2rem;
+        }
+        .section ul {
+            list-style: none;
+            margin: 0;
+            padding: 10px;
+        }
+        .section ul li {
+            margin-bottom: 10px;
+        }
+        .section ul li a {
+            text-decoration: none;
+            color: #cc0000;
+        }
+        .section ul li a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #222;
+            color: #ccc;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        footer a {
+            color: #ccc;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .footer-section {
+            flex: 1 1 200px;
+            margin: 10px;
+        }
+        .footer-section h4 {
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-section ul li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Vucci News</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Startseite</a></li>
+                    <li><a href="#feuerwehr">Feuerwehr</a></li>
+                    <li><a href="#din">DIN Normen</a></li>
+                    <li><a href="#politik">Politik</a></li>
+                    <li><a href="#wirtschaft">Wirtschaft</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breaking News Laufband -->
+    <div class="breaking-news">
+        <marquee behavior="scroll" direction="left">FW-F: Feuer in einer Apartmentanlage für pflegebedürftige Menschen - In der Nacht von Samstag auf Sonntag brach im 4. Obergeschoss einer Pflegeeinrichtung in Frankfurt Schwanheim ein Brand aus. Eine Person wurde leicht verletzt, zahlreiche Bewohner unverletzt evakuiert. Einsatzkräfte löschten den Brand bis 5:00 Uhr. Mehrere Wohneinheiten unbewohnbar, Schaden ca. 400.000 €.</marquee>
+    </div>
+
+    <main class="container">
+        <!-- Featured Section -->
+        <section class="featured">
+            <div class="featured-article">
+                <img src="images/junge_feuerwehrauto.jpg" alt="Junge im Feuerwehrauto">
+                <h2>Großbrand in Hamburger Industriegebiet: Feuerwehr kämpft stundenlang</h2>
+                <p>In der Nacht zum 3. Juni brach in einem Lagerhaus im Hamburger Hafen ein Großfeuer aus. Mehrere hundert Einsatzkräfte von Berufs- und Freiwilliger Feuerwehr waren vor Ort, um den Brand unter Kontrolle zu bringen. Die Ursache ist noch unklar.</p>
+                <a href="#" style="color: #cc0000; font-weight: bold;">Weiterlesen...</a>
+            </div>
+            <aside class="featured-sidebar">
+                <div class="sidebar-article">
+                    <h3>Neue Löschfahrzeuge für die Feuerwehr Berlin</h3>
+                    <p>Die Berliner Feuerwehr erhält 20 moderne HLF 20 Fahrzeuge, um die Einsatzkapazitäten zu erhöhen.</p>
+                    <a href="#" style="color: #cc0000;">Lesen...</a>
+                </div>
+                <div class="sidebar-article">
+                    <h3>DIN 14406: Aktuelle Änderungen zu tragbaren Feuerlöschern</h3>
+                    <p>Die neue Ausgabe der DIN 14406 definiert strengere Anforderungen an Feuerlöscher-Leistungsfähigkeiten und Kennzeichnung.</p>
+                    <a href="#" style="color: #cc0000;">Lesen...</a>
+                </div>
+            </aside>
+        </section>
+
+        <!-- News Sections -->
+        <section class="news-sections">
+            <!-- Feuerwehr Section -->
+            <div class="section" id="feuerwehr">
+                <header>Feuerwehr</header>
+                <ul>
+                    <li><a href="#">Übungseinsatz: Hypothetischer Chemieunfall in Köln erfolgreich geprobt</a></li>
+                    <li><a href="#">Technische Hilfeleistung nach Sturm in München: Bäume stürzen auf Fahrzeuge</a></li>
+                    <li><a href="#">Digitalisierung bei der Brandbekämpfung: Neue Drohnen für Lageerkundung eingeführt</a></li>
+                    <li><a href="#">Freiwillige Feuerwehr Glashütte feiert 150-jähriges Bestehen</a></li>
+                </ul>
+            </div>
+
+            <!-- DIN Normen Section -->
+            <div class="section" id="din">
+                <header>DIN Normen</header>
+                <ul>
+                    <li><a href="#">DIN EN 671-3: Anforderungen an Wandhydranten aktualisiert</a></li>
+                    <li><a href="#">Neue DIN 14095: Normung von Einsatzkleidung für Feuerwehren</a></li>
+                    <li><a href="#">DIN VDE 0826-2: Elektrische Anlagen in Feuerwehrhäusern – überarbeitete Vorgaben</a></li>
+                    <li><a href="#">DIN EN 708: Rauch- und Wärmeabzugsanlagen jetzt mit strengeren Prüfverfahren</a></li>
+                </ul>
+            </div>
+
+            <!-- Politik Section -->
+            <div class="section" id="politik">
+                <header>Politik</header>
+                <ul>
+                    <li><a href="#">Bundeswehr unterstützt Feuerwehreinsatz in Rheinland-Pfalz nach Unwetter</a></li>
+                    <li><a href="#">Gesetzesentwurf: Mehr Fördermittel für kommunale Feuerwehren geplant</a></li>
+                    <li><a href="#">Kritik an Feuerwehrreform in Bayern: Feuerwehren fordern bessere Ausstattung</a></li>
+                    <li><a href="#">Internationaler Austausch: Deutsches Feuerwehrteam reist nach Kanada</a></li>
+                </ul>
+            </div>
+
+            <!-- Wirtschaft Section -->
+            <div class="section" id="wirtschaft">
+                <header>Wirtschaft</header>
+                <ul>
+                    <li><a href="#">Hersteller von Feuerwehrfahrzeugen melden Umsatzsteigerung um 15%</a></li>
+                    <li><a href="#">Marktstudie: Nachfrage nach Persönlicher Schutzausrüstung (PSA) steigt</a></li>
+                    <li><a href="#">DIN-Normen als wirtschaftlicher Faktor: Wie Normen den Markt prägen</a></li>
+                    <li><a href="#">Investition in Infrastruktur: Neue Feuerwehrwache in Dortmund eingeweiht</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Über Vucci News</h4>
+                <p>Vucci News ist Ihr spezialisiertes Nachrichtenportal für aktuelle Informationen aus der Feuerwehrwelt und der DIN-Normen-Welt.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="#">Impressum</a></li>
+                    <li><a href="#">Datenschutz</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#">Werben bei uns</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Folgen Sie uns</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
